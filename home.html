@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Honkai: Star Rail - Home</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="css/style_home.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top main-navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand me-auto" href="#">
+            <img src="./image/logo.png" alt="Logo bintang" class="logo">Starbound Rail
+          </a>
+            <button
+             class="navbar-toggler" 
+             type="button" 
+             data-bs-toggle="collapse" 
+             data-bs-target="#navbarNav" 
+             aria-controls="navbarNav" 
+             aria-expanded="false" 
+             aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item me-5">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item me-5">
+                        <a class="nav-link" href="Intro.html">Introduction</a>
+                    </li>
+                    <li class="nav-item me-5">
+                        <a class="nav-link" href="codex.html">Codex</a>
+                    </li>
+                    <li class="nav-item me-5">
+                        <a class="nav-link" href="lore.html">Lore</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--Banner-->
+    <div class="container-fluid banner d-flex align-items-center justify-content-center">
+      <div class="overlay"></div>
+      <div class="container text-center content">
+        <img src="./image/logo.png" alt="Logo Bintang" class="logo">
+        <h1 class="title">Starbound Rail</h1>
+        <p class="desc">Bergabunglah dengan Trailblazer dan jelajahi dunia penuh misteri bersama Astral Express</p>
+        <div class="d-flex gap-3 justify-content-center flex-wrap mt-4">
+
+          <button class="btn btn-light rounded-pill px-4 py-2"
+            onclick="location.href='#menjelajah'">
+            Mulai Menjelajah
+          </button>
+
+          <button class="btn btn-outline-light rounded-pill px-4 py-2"
+            onclick="location.href='intro.html'">
+            Introduction
+          </button>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- About -->
+     <section id="menjelajah" class="about">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-5">
+            <h2>Starbound Rail</h2>
+            <div class="title-line"></div>
+            <p class="body-text">Website Starbound Rail adalah gerbang untuk menjelajahi karakter, mengungkap lore, dan menelusuri kisah di balik perjalanan Astral Express.</p>
+            <!-- Stats -->
+             <div class="row mt-5 text-center">
+              <div class="col-4">
+                <div class="stat-num">20+</div>
+                <div class="stat-lbl">Karakter</div>
+              </div>
+              <div class="col-4">
+                <div class="stat-num">11+</div>
+                <div class="stat-lbl">Light Cone</div>
+              </div>
+              <div class="col-4">
+                <div class="stat-num">3</div>
+                <div class="stat-lbl">Lore</div>
+              </div>
+             </div>
+          </div>
+          <!-- Video -->
+           <div class="col-lg-7">
+            <div class="vid-wrap">
+              <video autoplay muted loop playsinline>
+                <source src="image/animasi.mp4" type="video/mp4">
+              </video>
+            </div>
+           </div>
+        </div>
+      </div>
+     </section>
+
+     <!-- Characters -->
+      <section class="character">
+        <div class="container">
+          <h2 class="big text-center">Pilih Trailblazer</h2>
+          <div class="title-line mx-auto"></div>
+          <div class="char-cards">
+            <!-- Caelus -->
+             <div class="char-card caelus-card">
+              <img src="image char/caelus.png" alt="Caelus">
+              <div class="char-nameplate">
+                <span>Caelus</span>
+              </div>
+              <div class="char-info">
+                <div class="info-gender">♂ Male Trailblazer</div>
+                <div class="info-name">Caelus</div>
+                <p class="info-desc">Tenang dan penuh kendali, ia melangkah menghadapi setiap rintangan dengan tekad yang tak mudah goyah.</p>
+              </div>
+             </div>
+            <!-- Stelle -->
+             <div class="char-card stelle-card">
+              <img src="image char/stella.png" alt="Stelle">
+              <div class="char-nameplate">
+                <span>Stelle</span>
+              </div>
+              <div class="char-info">
+                <div class="info-gender">♀ Female Trailblazer</div>
+                <div class="info-name">Stelle</div>
+                <p class="info-desc">Berani dan penuh semangat, ia membawa energi baru dalam setiap perjalanan bersama Astral Express.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+     <!-- News -->
+      <section class="news">
+        <div class="container">
+          <h2 class="big">News</h2>
+          <div class="title-line"></div>
+          <div class="news-row">
+            <!-- Card 1 -->
+             <div class="news-item">
+              <div class="news-thumb">
+                <img src="image/berita 1.jpg" alt="">
+              </div>
+              <div class="news-content">
+                <div class="news-date">6 Mei 2026</div>
+                <div class="news-title">Mendekati Star Rail</div>
+                <p class="news-desc">"Evanescia: Truk Wangi dan Lembut!" | Honkai: Star Rail</p>
+                <a href="https://hsr.hoyoverse.com/id-id/news/163814" class="btn-news">Lihat →</a>
+              </div>
+            </div>
+            <!-- Card 2 -->
+             <div class="news-item">
+              <div class="news-thumb">
+                <img src="image/berita 2.jpg" alt="">
+              </div>
+              <div class="news-content">
+                <div class="news-date">27 April 2025</div>
+                <div class="news-title">Momen Perjalanan Antarbintang</div>
+                <p class="news-desc">"Cuma Main-main, Jangan Anggap Serius" | Honkai: Star Rail</p>
+                <a href="https://hsr.hoyoverse.com/id-id/news/163628" class="btn-news">Lihat →</a>
+              </div>
+            </div>
+            <!-- Card 3 -->
+             <div class="news-item">
+              <div class="news-thumb">
+                <img src="image/berita 3.jpg" alt="">
+              </div>
+              <div class="news-content">
+                <div class="news-date">21 April 2025</div>
+                <div class="news-title">Animasi Pendek</div>
+                <p class="news-desc">"Game ini Masih Bisa Dimainkan Enggak?" | Honkai: Star Rail</p>
+                <a href="https://hsr.hoyoverse.com/id-id/news/163620" class="btn-news">Lihat →</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-4">
+      <div class="container">
+        <div class="row text-center text-md-start">
+          <div class="col-md-4 mb-3 mb-md-0">
+            <h5 class="fw-bold">✦ Starbound Rail</h5>
+            <p class="text-secondary small">Starbound Rail adalah ensiklopedia digital untuk menjelajahi semesta Honkai Star Rail, mulai dari Character, light cone, hingga dunia yang dijelaskan dengan mudah untuk para pemula.</p>
+          </div>
+          <div class="col-md-4 mb-3 mb-md-0">
+            <h6 class="fw-bold mb-3">Navigasi</h6>
+            <ul class="list-unstyled">
+              <li><a href="#" class="text-secondary text-decoration-none">Home</a></li>
+              <li><a href="Intro.html" class="text-secondary text-decoration-none">Introduction</a></li>
+              <li><a href="codex.html" class="text-secondary text-decoration-none">Codex</a></li>
+              <li><a href="lore.html" class="text-secondary text-decoration-none">Lore</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h6 class="fw-bold mb-3">Kontak</h6>
+            <ul class="list-unstyled text-secondary small">
+              <li class="mb-1"><i class="bi bi-discord me-2"></i>Comunity Server</li>
+              <li class="mb-1"><i class="bi bi-instagram me-2"></i>@Offical StarboundRail</li>
+              <li><i class="bi bi-envelope-fill me-2"></i>support@starboundrail.com</li>
+            </ul>
+          </div>
+        </div>
+        <hr class="border-secondary mt-4 mb-3">
+        <p class="text-center text-secondary small mb-0">
+          &copy; 2026 Starbound Rail Project.
+        </p>
+      </div>
+    </footer>
+    
+    <script>
+      window.addEventListener('scroll', function () {
+        const navbar = document.querySelector('.main-navbar');
+        if (window.scrollY > 50) {
+          navbar.classList.add('scrolled');
+        } else {
+          navbar.classList.remove('scrolled');
+        }});
+      </script>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,148 @@
+.logo {
+    height: 80px;
+}
+
+.main-navbar {
+    background: transparent;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    padding: 3px 0;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.main-navbar.scrolled {
+    background: #0b1220;
+    box-shadow: 0 2px 20px rgba(0,0,0,0.5);
+}
+
+.nav-link {
+    position: relative;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #7eb8f7;
+    border-radius: 2px;
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+    width: 100%;
+}
+
+.banner {
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('../image/bg.jpeg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+}
+
+/* tinggi scroll navbar */
+#kategori {
+    scroll-margin-top: 80px; 
+}
+
+/* Codex */
+.btn-codex {
+  background-color: #ffffff;
+  color: #000;
+  border: none;
+  padding: 0.75rem 2rem;
+  border-radius: 30px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.btn-codex:hover {
+  background-color: #e0e0e0;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  
+}
+
+/* Footer */
+footer a{
+    transition: .3s;
+}
+
+footer a:hover{
+    color: white !important;
+}
+
+/* Responsive */
+@media (max-width: 768px){
+
+    .main-navbar{
+        background: transparent;
+        padding: 10px 0;
+    }
+
+    .main-navbar.scrolled{
+        background: #0b1220;
+        box-shadow: 0 2px 20px rgba(0,0,0,0.5);
+    }
+
+    .nav-item{
+        margin-right: 0 !important;
+        margin-bottom: 10px;
+    }
+
+    .banner{
+        height: auto;
+        min-height: 100vh;
+        padding: 120px 20px 70px;
+    }
+
+    .title{
+        font-size: 42px;
+    }
+
+    .desc{
+        font-size: 14px;
+    }
+
+    .banner .btn{
+        width: 100%;
+        max-width: 220px;
+    }
+
+    #kategori h1{
+        font-size: 34px !important;
+    }
+
+    .card-body{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .card-body img{
+        width: 100px;
+    }
+
+    .card h2{
+        font-size: 28px;
+    }
+
+    .card p{
+        font-size: 14px;
+    }
+
+    footer{
+        text-align: center;
+    }
+}

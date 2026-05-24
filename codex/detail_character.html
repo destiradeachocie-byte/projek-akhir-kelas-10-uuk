@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Honkai: Star Rail - Detail Character</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="../css/style_detail.css">
+</head>
+<body>
+  <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark main-color fixed-top main-navbar">
+        <div class="container-fluid">
+            <button
+             class="navbar-toggler" 
+             type="button" 
+             data-bs-toggle="collapse" 
+             data-bs-target="#navbarNav" 
+             aria-controls="navbarNav" 
+             aria-expanded="false" 
+             aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <a class="navbar-brand me-auto" href="#">
+                  <img src="../image/logo.png" alt="Logo bintang" class="logo">Starbound Rail
+                </a>
+                <ul class="navbar-nav">
+                    <li class="nav-item me-5">
+                        <a class="nav-link" href="../home.html">Home</a>
+                    </li>
+                    <li class="nav-item me-5">
+                        <a class="nav-link" href="../intro.html">Introduction</a>
+                    </li>
+                    <li class="nav-item me-5">
+                        <a class="nav-link active" aria-current="page" href="#">Codex</a>
+                    </li>
+                    <li class="nav-item me-5">
+                        <a class="nav-link" href="../lore.html">Lore</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+  <!-- Top box -->
+   <div class="container pt-5 mt-5">
+    <div class="top-box">
+      <!-- Breadcrumb -->
+       <nav class="mb-4" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+        <ol class="breadcrumb justify-content-center mb-0">
+          <li class="breadcrumb-item">
+            <a href="../index.html">Home</a>
+          </li>
+          <li class="breadcrumb-item">
+            <a href="../codex.html">Codex</a>
+          </li>
+          <li class="breadcrumb-item active" aria-current="page">
+            Characters
+          </li>
+        </ol>
+       </nav>
+      <!-- Header -->
+       <div class="header text-center border-0 p-0">
+        <h1>CHARACTERS</h1>
+        <div class="count">Ada 20 Karakter yang tersedia</div>
+       </div>
+    </div>
+   </div>
+  <!-- Filter -->
+   <div class="filter-bar justify-content-center">
+    <!-- rarity -->
+      <div class="d-flex gap-2">
+        <button class="btn-filter rounded-pill active star" data-group="rarity" data-filter="all">All Rarity</button>
+        <button class="btn-filter rounded-pill star" data-group="rarity" data-filter="5">★ 5</button>
+        <button class="btn-filter rounded-pill star" data-group="rarity" data-filter="4">★ 4</button>
+      </div>
+    <!-- element -->
+      <div class="d-flex gap-2">
+        <button class="btn-filter rounded-pill active" data-group="element" data-filter="all">All Element</button>
+        <button class="btn-filter rounded-pill" data-group="element" data-filter="fire">
+          <img src="../image/fire.png" class="elem-icon">Fire
+        </button>
+        <button class="btn-filter rounded-pill" data-group="element" data-filter="ice">
+          <img src="../image/ice.png" class="elem-icon">Ice
+        </button>
+        <button class="btn-filter rounded-pill" data-group="element" data-filter="wind">
+          <img src="../image/wind.png" class="elem-icon">Wind
+        </button>
+        <button class="btn-filter rounded-pill" data-group="element" data-filter="quantum">
+          <img src="../image/quantum.png" class="elem-icon">Quantum
+        </button>
+        <button class="btn-filter rounded-pill" data-group="element" data-filter="lightning">
+          <img src="../image/lightning.png" class="elem-icon">Lightning
+        </button>
+        <button class="btn-filter rounded-pill" data-group="element" data-filter="imaginary">
+          <img src="../image/imaginary.png" class="elem-icon">Imaginary
+        </button>
+        <button class="btn-filter rounded-pill" data-group="element" data-filter="physical">
+          <img src="../image/physical.png" class="elem-icon">Physical
+        </button>
+      </div>
+   </div>
+
+  <!-- 5 STAR -->
+   <div class="section">
+    <div class="stars">★★★★★</div>
+    <div class="section-title">5-Star Characters</div>
+    <div class="section-line"></div>
+   </div>
+   <div class="char-grid">
+    <!-- Card 1 -->
+     <div class="char-card rarity-5" data-rarity="5" data-element="fire">
+      <div class="side"></div>
+      <img src="../image char/himeko.webp">>
+      <div class="overlay"></div>
+      <div class="element">
+        <img src="../image/fire.png">
+      </div>
+      <div class="name">Himeko</div>
+     </div>
+    <!-- Card 2 -->
+     <div class="char-card rarity-5" data-rarity="5" data-element="imaginary">
+      <div class="side"></div>
+      <img src="../image char/welt.webp">
+      <div class="overlay"></div>
+      <div class="element">
+        <img src="../image/imaginary.png">
+      </div>
+      <div class="name">Welt</div>
+     </div>
+    <!-- Card 3 -->
+     <div class="char-card rarity-5" data-rarity="5" data-element="wind">
+      <div class="side"></div>
+      <img src="../image char/bronya.webp">
+      <div class="overlay"></div>
+      <div class="element">
+        <img src="../image/wind.png">
+      </div>
+      <div class="name">Bronya</div>
+     </div>
+    <!-- Card 4 -->
+     <div class="char-card rarity-5" data-rarity="5" data-element="ice">
+      <div class="side"></div>
+      <img src="../image char/gepard.webp">
+      <div class="overlay"></div>
+      <div class="element">
+        <img src="../image/ice.png">
+      </div>
+      <div class="name">Gepard</div>
+     </div>
+    <!-- Card 5 -->
+     <div class="char-card rarity-5" data-rarity="5" data-element="physical">
+      <div class="side"></div>
+      <img src="../image char/clara.webp">
+      <div class="overlay"></div>
+      <div class="element">
+        <img src="../image/physical.png">
+      </div>
+      <div class="name">Clara</div>
+     </div>
+    <!-- Card 6 -->
+     <div class="char-card rarity-5" data-rarity="5" data-element="ice">
+      <div class="side"></div>
+      <img src="../image char/yanqing.webp">
+      <div class="overlay"></div>
+      <div class="element">
+        <img src="../image/ice.png">
+      </div>
+      <div class="name">Yanqing</div>
+     </div>
+    <!-- Card 7 -->
+     <div class="char-card rarity-5" data-rarity="5" data-element="lightning">
+      <div class="side"></div>
+      <img src="../image char/bailu.webp">
+      <div class="overlay"></div>
+      <div class="element">
+        <img src="../image/lightning.png">
+      </div>
+      <div class="name">Bailu</div>
+     </div>
+    <!-- Card 8 -->
+     <div class="char-card rarity-5" data-rarity="5" data-element="quantum">
+      <div class="side"></div>
+      <img src="../image char/sele.webp">
+      <div class="overlay"></div>
+      <div class="element">
+        <img src="../image/quantum.png">
+      </div>
+      <div class="name">Seele</div>
+     </div>
+    <!-- Card 9 -->
+     <div class="char-card rarity-5" data-rarity="5" data-element="imaginary">
+      <div class="side"></div>
+      <img src="../image char/sunday.webp">
+      <div class="overlay"></div>
+      <div class="element">
+        <img src="../image/imaginary.png">
+      </div>
+      <div class="name">Sunday</div>
+     </div>
+    <!-- Card 10 -->
+     <div class="char-card rarity-5" data-rarity="5" data-element="physical">
+      <div class="side"></div>
+      <img src="../image char/robin.webp">
+      <div class="overlay"></div>
+      <div class="element">
+        <img src="../image/physical.png">
+      </div>
+      <div class="name">Robin</div>
+     </div>
+    <!-- Card 11 -->
+     <div class="char-card rarity-5" data-rarity="5" data-element="quantum">
+      <div class="side"></div>
+      <img src="../image char/castoris.webp">
+      <div class="overlay"></div>
+      <div class="element">
+        <img src="../image/quantum.png">
+      </div>
+      <div class="name">Castorice</div>
+     </div>
+    <!-- Card 12 -->
+     <div class="char-card rarity-5" data-rarity="5" data-element="imaginary">
+      <div class="side"></div>
+      <img src="../image char/mydei.webp">
+      <div class="overlay"></div>
+      <div class="element">
+        <img src="../image/imaginary.png">
+      </div>
+      <div class="name">Mydei</div>
+     </div>
+   </div>
+
+  <!-- 4 STAR -->
+   <div class="section">
+    <div class="stars">★★★★</div>
+    <div class="section-title">4-Star Characters</div>
+    <div class="section-line"></div>
+   </div>
+   <div class="char-grid">
+    <!-- Card 1 -->
+     <div class="char-card rarity-4" data-rarity="4" data-element="ice">
+      <div class="side"></div>
+      <img src="../image char/march 7th.webp">
+      <div class="overlay"></div>
+      <div class="element">
+        <img src="../image/ice.png">
+      </div>
+      <div class="name">March 7th</div>
+     </div>
+    <!-- Card 2 -->
+     <div class="char-card rarity-4" data-rarity="4" data-element="wind">
+      <div class="side"></div>
+      <img src="../image char/dan heng.webp">
+      <div class="overlay"></div>
+      <div class="element">
+        <img src="../image/wind.png">
+      </div>
+      <div class="name">Dan Heng</div>
+     </div>
+    <!-- Card 3 -->
+     <div class="char-card rarity-4" data-rarity="4" data-element="ice">
+      <div class="side"></div>
+      <img src="../image char/herta.webp">
+      <div class="overlay"></div>
+      <div class="element">
+        <img src="../image/ice.png">
+      </div>
+      <div class="name">Herta</div>
+     </div>
+    <!-- Card 4 -->
+     <div class="char-card rarity-4" data-rarity="4" data-element="fire">
+      <div class="side"></div>
+      <img src="../image char/gallagher.webp">
+      <div class="overlay"></div>
+      <div class="element">
+        <img src="../image/fire.png">
+      </div>
+      <div class="name">Gallagher</div>
+     </div>
+    <!-- Card 5 -->
+     <div class="char-card rarity-4" data-rarity="4" data-element="physical">
+      <div class="side"></div>
+      <img src="../image char/natasha.webp">
+      <div class="overlay"></div>
+      <div class="element">
+        <img src="../image/physical.png">
+      </div>
+      <div class="name">Natasha</div>
+     </div>
+    <!-- Card 6 -->
+     <div class="char-card rarity-4" data-rarity="4" data-element="wind">
+      <div class="side"></div>
+      <img src="../image char/sampo.webp">
+      <div class="overlay"></div>
+      <div class="element">
+        <img src="../image/wind.png">
+      </div>
+      <div class="name">Sampo</div>
+     </div>
+   </div>
+
+  <!-- Char Collab -->
+   <div class="section">
+    <div class="section-title">Character Collaborations</div>
+    <div class="section-line"></div>
+   </div>
+   <div class="char-grid">
+    <!-- Card 1 -->
+     <div class="char-card rarity-5" data-rarity="5" data-element="wind">
+      <div class="side"></div>
+      <img src="../image char/saber.webp">
+      <div class="overlay"></div>
+      <div class="element">
+        <img src="../image/wind.png">
+      </div>
+      <div class="name">Saber</div>
+     </div>
+    <!-- Card 2 -->
+     <div class="char-card rarity-5" data-rarity="5" data-element="quantum">
+      <div class="side"></div>
+      <img src="../image char/archer.webp">
+      <div class="overlay"></div>
+      <div class="element">
+        <img src="../image/quantum.png">
+      </div>
+      <div class="name">Archer</div>
+     </div>
+   </div>
+
+  <!-- Footer -->
+    <footer class="bg-dark text-light py-4">
+      <div class="container">
+        <div class="row text-center text-md-start">
+          <div class="col-md-4 mb-3 mb-md-0">
+            <h5 class="fw-bold">✦ Starbound Rail</h5>
+            <p class="text-secondary small">Starbound Rail adalah ensiklopedia digital untuk menjelajahi semesta Honkai Star Rail, mulai dari Character, light cone, hingga dunia yang dijelaskan dengan mudah untuk para pemula.</p>
+          </div>
+          <div class="col-md-4 mb-3 mb-md-0">
+            <h6 class="fw-bold mb-3">Navigasi</h6>
+            <ul class="list-unstyled">
+              <li><a href="home.html" class="text-secondary text-decoration-none">Home</a></li>
+              <li><a href="Intro.html" class="text-secondary text-decoration-none">Introduction</a></li>
+              <li><a href="codex.html" class="text-secondary text-decoration-none">Codex</a></li>
+              <li><a href="lore.html" class="text-secondary text-decoration-none">Lore</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h6 class="fw-bold mb-3">Kontak</h6>
+            <ul class="list-unstyled text-secondary small">
+              <li class="mb-1"><i class="bi bi-discord me-2"></i>Comunity Server</li>
+              <li class="mb-1"><i class="bi bi-instagram me-2"></i>@Offical StarboundRail</li>
+              <li><i class="bi bi-envelope-fill me-2"></i>support@starboundrail.com</li>
+            </ul>
+          </div>
+        </div>
+        <hr class="border-secondary mt-4 mb-3">
+        <p class="text-center text-secondary small mb-0">
+          &copy; 2026 Starbound Rail Project.
+        </p>
+      </div>
+    </footer>
+    
+  <script>
+  const buttons = document.querySelectorAll(".btn-filter");
+  const cards = document.querySelectorAll(".char-card");
+  let rarityFilter = "all";
+  let elementFilter = "all";
+
+  buttons.forEach(button => {
+    button.addEventListener("click", () => {
+      const group = button.dataset.group;
+      const filter = button.dataset.filter;
+      document // active button
+        .querySelectorAll(`.btn-filter[data-group="${group}"]`)
+        .forEach(btn => {
+          btn.classList.remove("active");
+        });
+
+        button.classList.add("active");
+        if(group === "rarity"){ // simpan filter
+          rarityFilter = filter;
+        }
+        if(group === "element"){
+          elementFilter = filter;
+        }
+        
+        cards.forEach(card => {  // filter card
+          const rarity = card.dataset.rarity;
+          const element = card.dataset.element;
+          const rarityMatch =
+            rarityFilter === "all" ||
+            rarity === rarityFilter;
+          const elementMatch =
+            elementFilter === "all" ||
+            element === elementFilter;
+            if(rarityMatch && elementMatch){
+              card.style.display = "block";
+            }else{
+              card.style.display = "none";
+            }
+        });
+    });
+  });
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

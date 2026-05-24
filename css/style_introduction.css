@@ -1,0 +1,266 @@
+.logo {
+    height: 80px;
+}
+
+.main-navbar {
+    background: transparent;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    padding: 1px 0;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.main-navbar.scrolled {
+    background: #121d33;
+    box-shadow: 0 2px 20px rgba(0,0,0,0.5);
+}
+
+.nav-link {
+    position: relative;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #7eb8f7;
+    border-radius: 2px;
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+    width: 100%;
+}
+
+.banner {
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('../image/bg.jpeg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+}
+
+/* tinggi scroll navbar */
+#character-stats,
+#character-elements,
+#character-skills {
+    scroll-margin-top: 80px; 
+}
+
+/* Stats Section */
+.stats-section{
+  padding:70px 0;
+}
+
+.stats-title{
+  font-size:42px;
+  font-weight:700;
+  text-align:center;
+  margin-bottom:15px;
+  color:#1f2937;
+}
+
+.title-line{
+  width:120px;
+  height:4px;
+  background:#4f8cff;
+  margin:0 auto 50px;
+  border-radius:20px;
+}
+
+.stats-card{
+  border:1px solid #e5e7eb;
+  border-radius:18px;
+  padding:25px;
+  height:100%;
+  transition:0.3s;
+  box-shadow:0 4px 12px rgba(0,0,0,0.05);
+}
+
+.stats-card:hover{
+  transform:translateY(-5px);
+  border-color:#4f8cff;
+  box-shadow:0 8px 20px rgba(79,140,255,0.15);
+}
+
+.stats-name{
+  font-size:22px;
+  font-weight:700;
+  margin-bottom:12px;
+  color:#111827;
+}
+
+.stats-desc{
+  color:#6b7280;
+  line-height:1.7;
+  font-size:16px;
+}
+
+/* Element Cards */
+.element-card{
+  background:#ffffff;
+  border:1px solid #e5e7eb;
+  border-radius:22px;
+  padding:30px 20px;
+  text-align:center;
+  transition:0.3s;
+  height:100%;
+  box-shadow:0 4px 12px rgba(0,0,0,0.05);
+}
+
+.element-card:hover{
+  transform:translateY(-6px);
+}
+
+.fire-card{
+  border-bottom:4px solid #ff5b5b;
+}
+
+.ice-card{
+  border-bottom:4px solid #59cfff;
+}
+
+.wind-card{
+  border-bottom:4px solid #4fd18b;
+}
+
+.quantum-card{
+  border-bottom:4px solid #6f7cff;
+}
+
+.lightning-card{
+  border-bottom:4px solid #b86cff;
+}
+
+.imaginary-card{
+  border-bottom:4px solid #f5c542;
+}
+
+.physical-card{
+  border-bottom:4px solid #9ca3af;
+}
+
+/* Path Cards */
+.path-card{
+  background:#ffffff;
+  border:1px solid #e5e7eb;
+  border-radius:20px;
+  padding:25px;
+  transition:0.3s;
+  height:100%;
+  box-shadow:0 4px 12px rgba(0,0,0,0.05);
+}
+
+.path-card:hover{
+  transform:translateY(-5px);
+  border-color:#4f8cff;
+  box-shadow:0 8px 20px rgba(79,140,255,0.12);
+}
+
+/* Skill Cards */
+.skill-card{
+  border:1px solid #e5e7eb;
+  border-radius:22px;
+  padding:28px 24px;
+  height:100%;
+  transition:0.3s;
+  box-shadow:0 4px 12px rgba(0,0,0,0.05);
+}
+
+.skill-card:hover{
+  transform:translateY(-5px);
+  border-color:#4f8cff;
+  box-shadow:0 8px 20px rgba(79,140,255,0.12);
+}
+
+.skill-card h4{
+  color:#111827;
+}
+
+.skill-card p{
+  line-height:1.7;
+}
+
+/* Footer */
+footer a{
+    transition: .3s;
+}
+
+footer a:hover{
+    color: white !important;
+}
+
+/* Responsive */
+@media (max-width: 768px){
+
+    .main-navbar{
+        background: transparent;
+        padding: 10px 0;
+    }
+
+    .main-navbar.scrolled{
+        background: #0b1220;
+        box-shadow: 0 2px 20px rgba(0,0,0,0.5);
+    }
+
+    .nav-item{
+        margin-right: 0 !important;
+        margin-bottom: 10px;
+    }
+
+    .banner{
+        height: auto;
+        min-height: 100vh;
+        padding: 120px 20px 70px;
+    }
+
+    .title{
+        font-size: 40px;
+    }
+
+    .desc{
+        font-size: 14px;
+    }
+
+    .banner .btn{
+        width: 100%;
+        max-width: 260px;
+    }
+
+    .stats-title,
+    h2{
+        font-size: 32px;
+    }
+
+    .stats-card,
+    .path-card,
+    .skill-card,
+    .element-card{
+        padding: 20px;
+    }
+
+    .stats-name{
+        font-size: 20px;
+    }
+
+    .stats-desc{
+        font-size: 14px;
+    }
+
+    .element-card img{
+        width: 55px;
+    }
+
+    footer{
+        text-align: center;
+    }
+}

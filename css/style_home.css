@@ -1,0 +1,313 @@
+.logo{
+    height: 80px;
+}
+
+.main-navbar{
+    background: transparent;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    padding: 3px 0;
+    transition: .3s;
+}
+
+.main-navbar.scrolled{
+    background: #0b1220;
+    box-shadow: 0 2px 20px rgba(0,0,0,.5);
+}
+
+.nav-link{
+    position: relative;
+}
+
+.nav-link::after{
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #7eb8f7;
+    border-radius: 2px;
+    transition: .3s;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after{
+    width: 100%;
+}
+
+/* Banner */
+.banner{
+    height: 100vh;
+    background:
+    linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)),
+    url('../image/bg.jpeg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+/* tinggi scroll navbar */
+#menjelajah {
+    scroll-margin-top: 80px; 
+}
+
+section{
+    padding: 90px 0;
+}
+
+h2{
+    font-size: 52px;
+    font-weight: 700;
+}
+
+.title-line{
+    width: 70px;
+    height: 3px;
+    background: #4f8cff;
+    margin: 15px 0 30px;
+    border-radius: 20px;
+}
+
+/* About */
+.about{
+    border-bottom: 1px solid #eee;
+}
+
+.body-text{
+    color: #666;
+    line-height: 1.8;
+}
+
+/* Stats */
+.stat-num{
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.stat-lbl{
+    font-size: 12px;
+    color: #888;
+    text-transform: uppercase;
+}
+
+/* Video */
+.vid-wrap{
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.vid-wrap video{
+    width: 100%;
+    display: block;
+}
+
+/* Character */
+.char-cards{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.char-card{
+    width: 260px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 14px;
+    background: #ddd;
+}
+
+.char-card img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    transition: .4s;
+}
+
+.char-card:hover img{
+    transform: scale(1.05);
+}
+
+.char-nameplate{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 20px;
+    background: linear-gradient(to top, rgba(0,0,0,.8), transparent);
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.char-info{
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,.75);
+    color: white;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    opacity: 0;
+    transition: .4s;
+}
+
+.char-card:hover .char-info{
+    opacity: 1;
+}
+
+.info-gender{
+    font-size: 11px;
+    letter-spacing: 2px;
+    color: #bbb;
+}
+
+.info-name{
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.info-desc{
+    font-size: 14px;
+    color: #ddd;
+    line-height: 1.7;
+}
+
+.stelle-card{
+    background: #f8dfe6;
+}
+
+.caelus-card{
+    background: #d0e7f5;
+}
+
+/* News */
+.news-row{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(260px,1fr));
+    gap: 20px;
+    margin-top: 50px;
+}
+
+.news-item{
+    background: white;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0,0,0,.06);
+    transition: .3s;
+}
+
+.news-item:hover{
+    transform: translateY(-5px);
+}
+
+.news-thumb img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.news-content{
+    padding: 20px;
+}
+
+.news-date{
+    font-size: 12px;
+    color: #888;
+    margin-bottom: 8px;
+}
+
+.news-title{
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.news-desc{
+    font-size: 14px;
+    color: #666;
+    line-height: 1.7;
+    margin-bottom: 18px;
+}
+
+.btn-news{
+    text-decoration: none;
+    color: #111;
+    font-size: 13px;
+    border-bottom: 1px solid #111;
+}
+
+/* Footer */
+footer a{
+    transition: .3s;
+}
+
+footer a:hover{
+    color: white !important;
+}
+
+/* Responsive */
+@media (max-width: 768px){
+
+    .main-navbar{
+        background: transparent;
+        padding: 10px 0;
+    }
+
+    .main-navbar.scrolled{
+        background: #0b1220;
+        box-shadow: 0 2px 20px rgba(0,0,0,0.5);
+    }
+
+    .nav-item{
+        margin-right: 0 !important;
+        margin-bottom: 10px;
+    }
+
+    .banner{
+        padding: 120px 20px 70px;
+        height: auto;
+        min-height: 100vh;
+    }
+
+    .title{
+        font-size: 42px;
+    }
+
+    .desc{
+        font-size: 14px;
+    }
+
+    h2{
+        font-size: 34px;
+        text-align: center;
+    }
+
+    .title-line{
+        margin: 15px auto 25px;
+    }
+
+    .about{
+        text-align: center;
+    }
+
+    .char-card{
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .news-row{
+        grid-template-columns: 1fr;
+    }
+
+    footer{
+        text-align: center;
+    }
+}

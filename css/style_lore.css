@@ -1,0 +1,266 @@
+.logo {
+    height: 80px;
+}
+
+.main-navbar {
+    background: transparent;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    padding: 1px 0;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.main-navbar.scrolled {
+    background: #121d33;
+    box-shadow: 0 2px 20px rgba(0,0,0,0.5);
+}
+
+.nav-link {
+    position: relative;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #7eb8f7;
+    border-radius: 2px;
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+    width: 100%;
+}
+
+.banner {
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('../image/bg.jpeg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+}
+
+#jarilo,
+#penacony,
+#amphoreus {
+    scroll-margin-top: 80px; 
+}
+
+/* CARD */
+.planet-card{
+    border-radius: 25px;
+    overflow: hidden;
+    margin-bottom: 60px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+/* Hero */
+.hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+}
+
+.hero h1{
+    font-family: 'Cinzel', serif;
+    font-size: 60px;
+    margin: 15px 0;
+}
+
+.hero p{
+    max-width: 400px;
+    line-height: 1.8;
+}
+
+.label{
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+/* PLANET IMAGE */
+.planet-img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.planeta-img{
+    width: 180px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* About */
+.about{
+    padding: 40px;
+}
+
+.about h2{
+    font-family: 'Cinzel', serif;
+    margin-bottom: 20px;
+}
+
+.about p{
+    line-height: 1.8;
+}
+
+.about video{
+    width: 100%;
+    border-radius: 20px;
+}
+
+/* Jarilo*/
+.jarilo{
+    background: #ffffff;
+}
+
+.jarilo .hero{
+    background: #eaf4ff;
+}
+
+.jarilo .label,
+.jarilo h3{
+    color: #2d7edb;
+}
+
+.jarilo .about{
+    background: #f6fbff;
+}
+
+/* Penacony */
+.penacony{
+    background: #fff8ef;
+}
+
+.penacony .hero{
+    background: #ffe9c7;
+}
+
+.penacony .label,
+.penacony h3{
+    color: #d89b16;
+}
+
+.penacony .about{
+    background: #fffaf2;
+}
+
+/* Amphoreus */
+.amphoreus{
+    background: #fff4ec;
+}
+
+.amphoreus .hero{
+    background: #ffd9b8;
+}
+
+.amphoreus .label,
+.amphoreus h3{
+    color: #d96c1e;
+}
+
+.amphoreus .about{
+    background: #fff8f2;
+}
+
+/* Footer */
+footer a{
+    transition: .3s;
+}
+
+footer a:hover{
+    color: white !important;
+}
+
+/* Responsive */
+@media (max-width: 768px){
+
+    .main-navbar{
+        background: transparent;
+        padding: 10px 0;
+    }
+
+    .main-navbar.scrolled{
+        background: #0b1220;
+        box-shadow: 0 2px 20px rgba(0,0,0,0.5);
+    }
+
+    .nav-item{
+        margin-right: 0 !important;
+        margin-bottom: 10px;
+    }
+
+    .banner{
+        height: auto;
+        min-height: 100vh;
+        padding: 120px 20px 70px;
+    }
+
+    .title{
+        font-size: 42px;
+    }
+
+    .desc{
+        font-size: 14px;
+    }
+
+    .banner .btn{
+        width: 100%;
+        max-width: 220px;
+    }
+
+    .hero{
+        flex-direction: column;
+        text-align: center;
+        gap: 25px;
+        padding: 35px 25px;
+    }
+
+    .hero h1{
+        font-size: 40px;
+    }
+
+    .hero p{
+        max-width: 100%;
+    }
+
+    .planet-img {
+        width: 90px;
+        height: 90px;
+    }
+
+    .planeta-img {
+        width: 150px;
+        height: 80px;
+    }
+
+    .about{
+        padding: 25px;
+        text-align: center;
+    }
+
+    .about h2{
+        font-size: 30px;
+    }
+
+    .about p{
+        font-size: 14px;
+    }
+
+    footer{
+        text-align: center;
+    }
+}

@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Honkai: Star Rail - Introduction</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="css/style_introduction.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top main-navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand me-auto" href="#">
+            <img src="./image/logo.png" alt="Logo bintang" class="logo">Starbound Rail
+          </a>
+            <button
+             class="navbar-toggler" 
+             type="button" 
+             data-bs-toggle="collapse" 
+             data-bs-target="#navbarNav" 
+             aria-controls="navbarNav" 
+             aria-expanded="false" 
+             aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item me-5">
+                        <a class="nav-link" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item me-5">
+                        <a class="nav-link active" aria-current="page" href="#">Introduction</a>
+                    </li>
+                    <li class="nav-item me-5">
+                        <a class="nav-link"  href="codex.html">Codex</a>
+                    </li>
+                    <li class="nav-item me-5">
+                        <a class="nav-link" href="lore.html">Lore</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--Banner-->
+    <div class="container-fluid banner d-flex align-items-center justify-content-center">
+      <div class="overlay"></div>
+      <div class="container text-center content">
+        <img src="./image/logo.png" alt="Logo Bintang" class="logo">
+        <h1 class="title">Introduction to The Game</h1>
+        <p class="desc">Semua yang perlu Anda ketahui tentang Honkai: Star Rail.</p>
+        <div class="d-flex gap-3 justify-content-center flex-wrap">
+          <button class="btn btn-light rounded-pill px-4" onclick="location.href='#character-stats'">
+            Character Stats
+          </button>
+          <button class="btn btn-light rounded-pill px-4" onclick="location.href='#character-elements'">
+            Character Elements & Paths
+          </button>
+          <button class="btn btn-light rounded-pill px-4" onclick="location.href='#character-skills'">
+            Character Skills
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!--Stats-->
+    <section id="character-stats" class="stats-section">
+      <div class="container">
+        <h1 class="stats-title">Statistik Karakter</h1>
+        <div class="title-line"></div>
+
+        <!--Card Stats-->
+         <div class="row g-4">
+          <div class="col-md-6 col-lg-4">
+            <div class="stats-card">
+              <h3 class="stats-name">HP</h3>
+              <p class="stats-desc">Jumlah kerusakan yang dapat diterima Karakter sebelum gugur dalam pertempuran.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="stats-card">
+              <h3 class="stats-name">ATK</h3>
+              <p class="stats-desc">Seberapa besar kerusakan yang ditimbulkan oleh Karakter.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="stats-card">
+              <h3 class="stats-name">DEF</h3>
+              <p class="stats-desc">Mengurangi kerusakan yang diterima Karakter.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="stats-card">
+            <h3 class="stats-name">Kecepatan</h3>
+            <p class="stats-desc">Menentukan seberapa cepat dan seberapa sering Karakter akan bertindak.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="stats-card">
+              <h3 class="stats-name">Tingkat Serangan Kritis</h3>
+              <p class="stats-desc">Menentukan kemungkinan karakter berhasil melakukan serangan kritis.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="stats-card">
+              <h3 class="stats-name">Kerusakan Kritis</h3>
+              <p class="stats-desc">Menentukan pengali kerusakan saat serangan kritis terjadi.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="stats-card">
+              <h3 class="stats-name">Efek Hancurkan</h3>
+              <p class="stats-desc">Meningkatkan efek Hancurkan Kelemahan dan kerusakan DoT.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="stats-card">
+              <h3 class="stats-name">Peningkatan Penyembuhan Keluar</h3>
+              <p class="stats-desc">Menentukan jumlah penyembuhan yang dilakukan karakter.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="stats-card">
+              <h3 class="stats-name">Tingkat Regenerasi Energi</h3>
+              <p class="stats-desc">Menentukan seberapa cepat Karakter mengisi energi Ultimate.</p>
+             </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mx-auto">
+            <div class="stats-card">
+              <h3 class="stats-name">Tingkat Keberhasilan Efek</h3>
+              <p class="stats-desc">Menentukan peluang karakter memberikan efek negatif kepada musuh.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mx-auto">
+            <div class="stats-card">
+              <h3 class="stats-name">RES Efek</h3>
+              <p class="stats-desc">Menentukan seberapa sulit musuh memberikan efek negatif pada karakter.</p>
+            </div>
+          </div>
+      </div>
+    </section>
+    
+    <!--Element & Path Cards-->
+    <!-- Element -->
+     <section id="character-elements" class="py-5">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="fw-bold">Elements</h2>
+          <div class="title-line"></div>
+        </div>
+
+        <div class="row g-4 justify-content-center">
+          <!-- Fire -->
+           <div class="col-6 col-md-4 col-lg-3">
+            <div class="element-card fire-card">
+              <img src="image/fire.png" width="70" class="mb-3" alt="Fire">
+              <h5 class="fw-bold m-0 text-danger">Fire</h5>
+            </div>
+           </div>
+          <!-- Ice -->
+           <div class="col-6 col-md-4 col-lg-3">
+            <div class="element-card ice-card">
+              <img src="image/ice.png" width="70" class="mb-3" alt="Ice">
+              <h5 class="fw-bold m-0 text-info">Ice</h5>
+            </div>
+           </div>
+          <!-- Wind -->
+           <div class="col-6 col-md-4 col-lg-3">
+            <div class="element-card wind-card">
+              <img src="image/wind.png" width="70" class="mb-3" alt="Wind">
+              <h5 class="fw-bold m-0 text-success">Wind</h5>
+            </div>
+           </div>
+           <!-- Quantum -->
+           <div class="col-6 col-md-4 col-lg-3">
+            <div class="element-card quantum-card">
+              <img src="image/quantum.png" width="70" class="mb-3" alt="Quantum">
+              <h5 class="fw-bold m-0 text-primary">Quantum</h5>
+            </div>
+           </div>
+          <!-- Lightning -->
+           <div class="col-6 col-md-4 col-lg-3">
+            <div class="element-card lightning-card">
+              <img src="image/lightning.png" width="70" class="mb-3" alt="Lightning">
+              <h5 class="fw-bold m-0" style="color:#b86cff;">Lightning</h5>
+            </div>
+           </div>
+          <!-- Imaginary -->
+           <div class="col-6 col-md-4 col-lg-3">
+            <div class="element-card imaginary-card">
+              <img src="image/imaginary.png" width="70" class="mb-3" alt="Imaginary">
+              <h5 class="fw-bold m-0 text-warning">Imaginary</h5>
+            </div>
+           </div>
+          <!-- Physical -->
+           <div class="col-6 col-md-4 col-lg-3">
+            <div class="element-card physical-card">
+              <img src="image/physical.png" width="70" class="mb-3" alt="Physical">
+              <h5 class="fw-bold m-0 text-secondary">Physical</h5>
+            </div>
+           </div>
+          </div>
+      </div>
+    </section>
+
+    <!-- Paths -->
+     <section class="py-5">
+      <div class="container">
+        <!-- Title -->
+         <div class="text-center mb-5">
+          <h2 class="fw-bold">Paths</h2>
+          <div class="title-line"></div>
+         </div>
+         
+         <div class="row g-4 justify-content-center">
+          <!-- Destruction -->
+           <div class="col-md-6 col-lg-4">
+            <div class="path-card">
+              <h4 class="fw-bold mb-2">Destruction</h4>
+              <p class="text-secondary m-0">Memiliki damage tinggi dengan keseimbangan serangan dan daya tahan.</p>
+            </div>
+           </div>
+          <!-- Hunt -->
+           <div class="col-md-6 col-lg-4">
+            <div class="path-card">
+              <h4 class="fw-bold mb-2">The Hunt</h4>
+              <p class="text-secondary m-0">Fokus pada serangan single target dengan kecepatan tinggi.</p>
+            </div>
+           </div>
+          <!-- Erudition -->
+           <div class="col-md-6 col-lg-4">
+            <div class="path-card">
+              <h4 class="fw-bold mb-2">Erudition</h4>
+              <p class="text-secondary m-0">Menghasilkan damage area besar kepada banyak musuh.</p>
+            </div>
+           </div>
+          <!-- Harmony -->
+           <div class="col-md-6 col-lg-4">
+            <div class="path-card">
+              <h4 class="fw-bold mb-2">Harmony</h4>
+              <p class="text-secondary m-0">Memberikan buff dan meningkatkan kemampuan tim.</p>
+            </div>
+           </div>
+          <!-- Nihility -->
+           <div class="col-md-6 col-lg-4">
+            <div class="path-card">
+              <h4 class="fw-bold mb-2">Nihility</h4>
+              <p class="text-secondary m-0">Memberikan debuff dan efek negatif pada musuh.</p>
+            </div>
+           </div>
+          <!-- Preservation -->
+           <div class="col-md-6 col-lg-4">
+            <div class="path-card">
+              <h4 class="fw-bold mb-2">Preservation</h4>
+              <p class="text-secondary m-0">Memiliki pertahanan tinggi dan melindungi rekan satu tim.</p>
+            </div>
+           </div>
+          <!-- Abundance -->
+           <div class="col-md-6 col-lg-4">
+            <div class="path-card">
+              <h4 class="fw-bold mb-2">Abundance</h4>
+              <p class="text-secondary m-0">Berfokus pada penyembuhan dan menjaga daya tahan tim.</p>
+            </div>
+           </div>
+           <!-- Remembrance -->
+            <div class="col-md-6 col-lg-4">
+              <div class="path-card">
+                <h4 class="fw-bold mb-2">Remembrance</h4>
+                <p class="text-secondary m-0">Mengontrol musuh dengan efek freeze dan crowd control.</p>
+              </div>
+            </div>
+            <!-- Elation -->
+             <div class="col-md-6 col-lg-4">
+              <div class="path-card">
+                <h4 class="fw-bold mb-2">Elation</h4>
+                <p class="text-secondary m-0">Mengandalkan follow-up attack untuk menghasilkan damage tambahan.</p>
+              </div>
+             </div>
+         </div>
+      </div>
+     </section>
+
+     <!-- Character Skill -->
+      <section id="character-skills" class="py-5">
+        <div class="container">
+          <div class="text-center mb-5">
+            <h2 class="fw-bold">Character Skills</h2>
+            <div class="title-line"></div>
+          </div>
+          
+          <div class="row g-4 justify-content-center">
+            <!-- Basic Attack -->
+             <div class="col-md-6 col-lg-4">
+              <div class="skill-card">
+                <h4 class="fw-bold mb-3">Basic Attack</h4>
+                <p class="text-secondary m-0">Serangan dasar yang selalu dapat digunakan untuk menyerang musuh dan menghasilkan Skill Point.</p>
+              </div>
+             </div>
+            <!-- Skill -->
+             <div class="col-md-6 col-lg-4">
+              <div class="skill-card">
+                <h4 class="fw-bold mb-3">Skill</h4>
+                <p class="text-secondary m-0">Kemampuan utama karakter yang menggunakan Skill Point untuk menyerang, memberi buff, atau efek lainnya.</p>
+              </div>
+             </div>
+            <!-- Ultimate -->
+             <div class="col-md-6 col-lg-4">
+              <div class="skill-card">
+                <h4 class="fw-bold mb-3">Ultimate</h4>
+                <p class="text-secondary m-0">Kemampuan terkuat karakter yang membutuhkan energi sebelum dapat digunakan.</p>
+              </div>
+             </div>
+             <!-- Talent -->
+              <div class="col-md-6 col-lg-4">
+                <div class="skill-card">
+                  <h4 class="fw-bold mb-3">Talent</h4>
+                  <p class="text-secondary m-0">Kemampuan pasif yang aktif secara otomatis saat kondisi tertentu terpenuhi.</p>
+                </div>
+              </div>
+              <!-- Technique -->
+               <div class="col-md-6 col-lg-4">
+                <div class="skill-card">
+                  <h4 class="fw-bold mb-3">Technique</h4>
+                  <p class="text-secondary m-0">Kemampuan khusus yang digunakan sebelum pertempuran untuk memberi buff atau memulai serangan awal.</p>
+                </div>
+               </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+    <footer class="bg-dark text-light py-4">
+      <div class="container">
+        <div class="row text-center text-md-start">
+          <div class="col-md-4 mb-3 mb-md-0">
+            <h5 class="fw-bold">✦ Starbound Rail</h5>
+            <p class="text-secondary small">Starbound Rail adalah ensiklopedia digital untuk menjelajahi semesta Honkai Star Rail, mulai dari Character, light cone, hingga dunia yang dijelaskan dengan mudah untuk para pemula.</p>
+          </div>
+          <div class="col-md-4 mb-3 mb-md-0">
+            <h6 class="fw-bold mb-3">Navigasi</h6>
+            <ul class="list-unstyled">
+              <li><a href="home.html" class="text-secondary text-decoration-none">Home</a></li>
+              <li><a href="#" class="text-secondary text-decoration-none">Introduction</a></li>
+              <li><a href="codex.html" class="text-secondary text-decoration-none">Codex</a></li>
+              <li><a href="lore.html" class="text-secondary text-decoration-none">Lore</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h6 class="fw-bold mb-3">Kontak</h6>
+            <ul class="list-unstyled text-secondary small">
+              <li class="mb-1"><i class="bi bi-discord me-2"></i>Comunity Server</li>
+              <li class="mb-1"><i class="bi bi-instagram me-2"></i>@Offical StarboundRail</li>
+              <li><i class="bi bi-envelope-fill me-2"></i>support@starboundrail.com</li>
+            </ul>
+          </div>
+        </div>
+        <hr class="border-secondary mt-4 mb-3">
+        <p class="text-center text-secondary small mb-0">
+          &copy; 2026 Starbound Rail Project.
+        </p>
+      </div>
+    </footer>
+    
+    <script>
+      window.addEventListener('scroll', function () {
+        const navbar = document.querySelector('.main-navbar');
+        if (window.scrollY > 50) {
+          navbar.classList.add('scrolled');
+        } else {
+          navbar.classList.remove('scrolled');
+        }});
+      </script>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
